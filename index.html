@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Header */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+      }
+
+      .header ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+      }
+
+      .header li {
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      /* Hero Section */
+      .carousel {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin-top: 20px;
+      }
+
+      .carousel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Content on Image */
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+        color: white;
+      }
+
+      .content h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .content p {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+
+      .buttons button {
+        padding: 12px 25px;
+        margin-right: 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+
+      .btn1 {
+        background: #007bff;
+        color: white;
+      }
+
+      .btn2 {
+        background: white;
+        color: black;
+      }
+
+      .buttons button:hover {
+        opacity: 0.8;
+      }
+      .cards-section {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 40px 0;
+      }
+      .card {
+        height: 250px;
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        cursor:pointer;
+      }
+      img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ---For header section---- -->
+    <div class="header">
+      <h1>My Website</h1>
+
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <div class="carousel">
+      <img src="./Images/carousel.jpg" alt="Banner" />
+
+      <div class="content">
+        <h2>Welcome to My Website</h2>
+        <p>Build amazing websites with HTML & CSS.</p>
+
+        <div class="buttons">
+          <button class="btn1">Get Started</button>
+          <button class="btn2">Learn More</button>
+        </div>
+      </div>
+    </div>
+    <div class="cards-section">
+      <div class="card">
+        <h3>Card Title</h3>
+        <img
+          src="https://images.unsplash.com/photo-1779896412017-0583c466e261?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          srcset=""
+        />
+        <p>This is a simple card component.</p>
+      </div>
+      <div class="card">
+        <h3>Another Card</h3>
+        <img
+          src="https://images.unsplash.com/photo-1779896412017-0583c466e261?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          srcset=""
+        />
+        <p>This is another card component.</p>
+      </div>
+      <div class="card">
+        <h3>Another Card</h3>
+        <img
+          src="https://images.unsplash.com/photo-1779896412017-0583c466e261?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+          srcset=""
+        />
+        <p>This is another card component.</p>
+      </div>
+    </div>
+  </body>
+</html>
